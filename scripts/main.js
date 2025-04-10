@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 //Active page
     let menuLists = document.querySelectorAll(".sidebar-nav li>a");
     menuLists.forEach(menuList => {
-        if(window.location.href === menuList.href){
+        if(document.title.toLowerCase() === menuList.parentElement.id){
             menuList.parentElement.classList.add("active");
         }
         else{
