@@ -1,0 +1,11 @@
+.funding {
+    color: #008000;
+}
+
+.withdrawal {
+    color: red;
+}
+
+td {
+    border-bottom: none;
+}

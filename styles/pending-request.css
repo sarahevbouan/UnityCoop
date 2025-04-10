@@ -1,0 +1,46 @@
+.request {
+    box-shadow: 0 0 3px 1px #b3b2b2;
+    border-radius: 15px;
+}
+
+.user-photo {
+    cursor: pointer;
+}
+
+.req-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.req-actions button {
+    padding: 10px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.req-actions .accept-btn {
+    background-color: #4D83E8;
+    color: white;
+    border: none;
+
+}
+
+.req-actions .decline-btn {
+    color: red;
+    border: 1px solid red;
+    background-color: initial;
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .request {
+        align-items: start;
+        flex-direction: column;
+        width: fit-content;
+        
+    }
+    .req-actions {
+        gap: 0.2rem;
+    }
+}

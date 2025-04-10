@@ -1,0 +1,121 @@
+.loans .main-body-content > div {
+    margin-bottom: 2rem;
+}
+
+.summary-group:nth-child(2) > img {
+    width: 75px;
+    height: 75px;
+}
+
+.disbursed {
+    gap: 1rem;
+}
+
+.disbursed > p {
+    font-size: 12px;
+}
+.disbursed span {
+    color: var(--Primary-color);
+}
+
+.loans .shadowed-container {
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.loans td, .loans th {
+    font-size: 14px;
+}
+
+.loan-tables > div {
+    width: 45%;
+}
+
+.table-caption {
+    padding: 0 10px 10px;
+}
+
+.upcoming-payment .pending-btn {
+    background-color: red;
+}
+
+.upcoming-payment .due-btn {
+    background-color: #CEE4FA;
+    color: revert;
+}
+
+.loan-charts {
+    gap: 1rem;
+}
+
+.loans .canva-holder {
+    width: 30%;
+    height: 45vh;
+    margin: revert;
+}
+
+.loans .piechart-legends {
+    border: none;
+}
+
+.loans .piechart-legends > div {
+    width: 20px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.loans .piechart-legends p {
+    color: revert;
+}
+
+.not-displayed {
+    display: none;
+}
+
+#manage-loans-display-btn, #loans-overview-display-btn {
+    cursor: pointer;
+}
+
+.manage-loans .action-btn {
+    border-radius: 0;
+}
+
+
+.manage-loans .overdue {
+    color: red;
+}
+
+@media screen and (min-width: 1300px) {
+    .summary-group {
+        width: 24%;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .loan-charts {
+        flex-wrap: wrap;
+    }
+
+   .loans .canva-holder {
+    width: 48%;
+   }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .loan-tables {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .loan-tables > div {
+        width: 100%;   
+    }  
+}
+
+@media screen and (max-width: 768px) {
+    .loans .canva-holder {
+        width: 100%;
+    }
+}

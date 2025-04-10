@@ -1,0 +1,12 @@
+.notif {
+    border: none;
+    border-bottom: 1px solid #CEE4FA;
+}
+
+.inner-flexed-item > p {
+    color: grey;
+}
+
+.notf-close-btn {
+    cursor: pointer;
+}

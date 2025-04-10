@@ -1,0 +1,33 @@
+.users .user-info {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.users .user-info > img {
+    width: 35px;
+    height: 36px;
+}
+
+.users .action-btn {
+    border-radius: 5px;
+}
+
+.search-panel {
+    display: flex;
+    margin-bottom: 1rem;
+    gap: 3rem;
+}
+
+.users .input-group {
+    width: 80%;
+    margin-bottom: 0;
+}
+
+.input-group input {
+    width: 100%;
+}
+
+.user-search-btn {
+    background-color: #4a51d3;
+}
