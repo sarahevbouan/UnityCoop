@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Overview</title>
-    <link rel="stylesheet" href="/styles/main.css" />
-    <link rel="stylesheet" href="/styles/overview.css" />
+    <base href="/UnityCoop/" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/overview.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
@@ -22,13 +23,10 @@
             <h4>Admin Dashboard</h4>
             <div class="header-nav">
               <a href="#search-bar">
-                <img src="/images/search_icon.svg" class="search-icon" />
+                <img src="images/search_icon.svg" class="search-icon" />
               </a>
               <a href="/pages/notification.html">
-                <img
-                  src="/images/notifications.svg"
-                  class="notification-icon"
-                />
+                <img src="images/notifications.svg" class="notification-icon" />
               </a>
             </div>
           </div>
@@ -39,35 +37,35 @@
                 <h3>Total Cooperative<br />Funds</h3>
                 <p>#100,000</p>
               </div>
-              <img src="/images/account_balance.svg" />
+              <img src="images/account_balance.svg" />
             </div>
             <div class="summary-group">
               <div>
                 <h3>Solo Account<br />Balance</h3>
                 <p>#100,000</p>
               </div>
-              <img src="/images/solo_icon.svg" />
+              <img src="images/solo_icon.svg" />
             </div>
             <div class="summary-group">
               <div>
                 <h3>Total Registered<br />Users</h3>
                 <p>20</p>
               </div>
-              <img src="/images/registered_users.svg" />
+              <img src="images/registered_users.svg" />
             </div>
             <div class="summary-group">
               <div>
                 <h3>Pending Loan<br />Requests</h3>
                 <p>#100,000</p>
               </div>
-              <img src="/images/pending_loan.svg" />
+              <img src="images/pending_loan.svg" />
             </div>
             <div class="summary-group">
               <div>
                 <h3>Approved<br />Loans</h3>
                 <p>#100,000</p>
               </div>
-              <img src="/images/approved_loans.svg" />
+              <img src="images/approved_loans.svg" />
             </div>
           </div>
 
@@ -80,7 +78,7 @@
               <!-- Search bar -->
             </div>
             <div class="input-group">
-              <img src="/images/search_icon.svg" />
+              <img src="images/search_icon.svg" />
               <input
                 type="search"
                 name="search-bar"
@@ -139,7 +137,7 @@
           <div class="canva-holder shadowed-container">
             <div class="chart-title">
               <p>Request Status</p>
-              <img src="/images/chart_button1.svg" alt="" />
+              <img src="images/chart_button1.svg" alt="" />
             </div>
             <div class="canva-container pie-holder">
               <canvas id="request-status-pie"></canvas>
@@ -165,7 +163,7 @@
                 <p>Monthly Transaction Rate</p>
                 <p>#18,000,000</p>
               </div>
-              <img src="/images/chart_button2.svg" alt="" />
+              <img src="images/chart_button2.svg" alt="" />
             </div>
             <div class="canva-container">
               <canvas id="monthly-rate-bar"></canvas>
@@ -175,9 +173,9 @@
       </div>
     </main>
 
-    <script src="/reusables/sidebar.js"></script>
-    <script src="/scripts/main.js"></script>
-    <script src="/reusables/chartbuilder.js"></script>
-    <script src="/scripts/overview.js"></script>
+    <script src="reusables/sidebar.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="reusables/chartbuilder.js"></script>
+    <script src="scripts/overview.js"></script>
   </body>
 </html>
