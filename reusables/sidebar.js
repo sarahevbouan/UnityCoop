@@ -21,7 +21,7 @@ let sidebarGenerator = () => {
           <span class="close-menu-btn">X</span>
           <ul>
             <li class="navlink-group" id="overview">
-              <a href="/index.html">
+              <a href="index.html">
                 <img src="images/overview_icon.svg" alt="" />Overview</a
               >
             </li>
