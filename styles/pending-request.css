@@ -1,6 +1,7 @@
 .request {
     box-shadow: 0 0 3px 1px #b3b2b2;
     border-radius: 15px;
+    margin-bottom: 1.5rem;
 }
 
 .user-photo {
@@ -37,7 +38,7 @@
     .request {
         align-items: start;
         flex-direction: column;
-        width: fit-content;
+        min-width: fit-content;
         
     }
     .req-actions {

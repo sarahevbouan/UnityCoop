@@ -43,5 +43,21 @@
     }
 }
 
+@media screen and (max-width: 940px) {
+    .overview-main-section {
+        padding: 0;
+}
+}
 
+@media screen and (max-width: 768px) {
+    .canva-holder {
+        width: 100%;
+    }
+
+    .right-sidebar {
+        width: 100%;
+        margin: 0;
+        padding-top: 0;
+    }
+}
 

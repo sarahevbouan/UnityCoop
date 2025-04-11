@@ -208,7 +208,7 @@ main>* {
 
 .summary-group {
     width: 32%;
-    background-image: linear-gradient(to bottom right, #CEE4FA, #4D83E8, #007fff);
+    background-image: linear-gradient(to bottom right, #9ccaf8, #4D83E8, #007fff);
     height: 8rem;
     border-radius: 12px;
     box-shadow: 2px 2px 7px 3px #57A5F3;
@@ -375,11 +375,17 @@ canvas {
         width: 100%;
     }
 
+    .main-body, .main-header-style-ext {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .left-sidebar {
         display: flex;
         justify-content: space-between;
         margin-bottom: 2rem;
         border: none;
+        padding-top: 1rem;
     }
 
     .brand {
@@ -449,6 +455,14 @@ canvas {
     .summary-group {
         width: 100%;
         margin: auto;
+        border-radius: 5px;
+        box-shadow: none;
+    }
+
+    .left-sidebar img {
+        width: 20px;
+        height: 20px;
+        border: none;
     }
 }
 
