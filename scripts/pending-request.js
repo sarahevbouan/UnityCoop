@@ -39,6 +39,7 @@ let main = document.querySelector("main");
 let popUp;
 let modalCloseBtn;
 let modalOpen;
+let parentRequest;
 window.addEventListener("click", (e) => {
     if(modalOpen && !e.target.classList.contains("modal-close-btn")){
         e.preventDefault();
@@ -46,6 +47,7 @@ window.addEventListener("click", (e) => {
 
     else{
         if(e.target.classList.contains("user-photo")){
+            parentRequest = e.target.parentElement.parentElement;
             popUp = document.createElement("div");
             modalCloseBtn = document.createElement("span");
             let userName = document.createElement("h3");
@@ -61,7 +63,9 @@ window.addEventListener("click", (e) => {
             userPhoto.src = e.target.src;
 
             acceptBtn.classList.add("popup-accept-btn");
+            acceptBtn.classList.add("unmount");
             declineBtn.classList.add("popup-decline-btn");
+            declineBtn.classList.add("unmount");
             acceptBtn.textContent = "Accept";
             declineBtn.textContent = "Decline";
             actionBtns.append(acceptBtn, declineBtn);
@@ -73,17 +77,29 @@ window.addEventListener("click", (e) => {
            
             popUp.classList.add("user-popup");
            
-            document.body.appendChild(popUp);
+            parentRequest.appendChild(popUp);
             document.body.style.overflow = "hidden";
             modalOpen = true;
-            
         }
 
         if(e.target.classList.contains("modal-close-btn")){
-            document.body.removeChild(popUp);
+            parentRequest.removeChild(popUp);
             document.body.style.overflow = "auto";
             modalOpen = false;
             console.log(document.body.style.overflow);
         }
     }
 });
+
+
+
+let unmountRequest = document.querySelector('.main-body-content');
+
+unmountRequest.addEventListener('click', (e) => {
+    if(e.target.classList.contains('unmount')){
+        let requestToUnmount = e.target.closest('.request');
+        requestToUnmount.parentElement.removeChild(requestToUnmount);
+        modalOpen = false;
+    }
+});
+

@@ -39,6 +39,7 @@
     padding: 15px 40px;
     border-radius: 30px;
     border: none;
+    cursor: pointer;
 }
 
 .user-popup button:hover {
