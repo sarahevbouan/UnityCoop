@@ -1,5 +1,5 @@
 .request {
-    box-shadow: 0 0 3px 1px #b3b2b2;
+    box-shadow: 0 0 4px #CEE4FA;
     border-radius: 15px;
     margin-bottom: 1.5rem;
 }
@@ -7,6 +7,11 @@
 .user-photo {
     cursor: pointer;
 }
+
+.file-details > p {
+    font-size: 14px;
+}
+
 
 .req-actions {
     display: flex;

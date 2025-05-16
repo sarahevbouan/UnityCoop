@@ -1,19 +1,21 @@
-//Navigation toggler
+//Displayed content toggler
 let loansOverview = document.querySelector(".loans-overview");
 let loansOverviewDisplayBtn = document.querySelector("#loans-overview-display-btn");
 let manageLoans = document.querySelector(".manage-loans");
 let manageLoansDisplayBtn = document.querySelector("#manage-loans-display-btn");
-
 manageLoansDisplayBtn.addEventListener("click", () => {
     manageLoans.classList.remove("not-displayed");
     loansOverview.classList.add("not-displayed");
+    //Display search icon
+    mobileNavSearchIcon.style.display = 'revert';
+    headerNavSearchIcon.style.display = 'revert';
 });
-
 loansOverviewDisplayBtn.addEventListener("click", () => {
     manageLoans.classList.add("not-displayed");
     loansOverview.classList.remove("not-displayed");
+    //Hide search icon
+    searchIconDisplay();
 });
-
 
 //Line and Progress charts
 try {

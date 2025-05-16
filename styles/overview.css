@@ -5,11 +5,12 @@
 
 .overview-main-body {
     padding-top: 0;
+    padding-bottom: 0;
 }
 
 .overview-main-section {
     width: 75%;
-    padding: 2rem 2rem 0;
+    padding: 2rem 2rem;
 }
 
 .right-sidebar {
@@ -20,6 +21,11 @@
     row-gap: 2.5rem;
     border-left: 1px solid rgba(128, 128, 128, 0.5);
     padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.overview-main-body .search-bar {
+    outline: none;
 }
 
 
@@ -57,7 +63,6 @@
     .right-sidebar {
         width: 100%;
         margin: 0;
-        padding-top: 0;
     }
 }
 

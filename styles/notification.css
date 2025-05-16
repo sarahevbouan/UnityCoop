@@ -7,6 +7,10 @@
     color: grey;
 }
 
+.inner-flexed-item > * {
+    font-size: 14px;
+}
+
 .notf-close-btn {
     cursor: pointer;
 }

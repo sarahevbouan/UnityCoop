@@ -7,9 +7,9 @@ let sidebarGenerator = () => {
         </div>
         <div class="condensed-nav-group">
           <div class="mobile-nav">
-            <a href="#search-bar">
+            <span id="mobile-nav-search-icon">
                 <img src="images/search_icon.svg" class="search-icon" />
-            </a>
+            </span>
             <a href="notification.html">
               <img src="images/notifications.svg" class="notification-icon" />
             </a>
