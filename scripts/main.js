@@ -17,12 +17,14 @@ const insertInputField = (searchIcon) => {
     let searchBar = document.createElement('input');
     searchBar.type = 'search';
     searchBar.classList.add('search-bar');
+    searchBar.placeholder = 'Sreach';
     searchIcon.style.display = 'none';
     searchIcon.parentElement.appendChild(searchBar);
 }
 
 const searchFeature = (searchBar, searchList) => {
-    searchList.forEach(listItem => {
+    if(searchList.length){
+        searchList.forEach(listItem => {
         let searchValue = searchBar.value.toLowerCase();
         let listContent1 = listItem.querySelector('.search-term1').textContent.toLowerCase();
         let listContent2 = listItem.querySelector('.search-term2').textContent.toLowerCase();
@@ -38,6 +40,7 @@ const searchFeature = (searchBar, searchList) => {
             listItem.style.display = 'none';
         }
     });
+    }
 }
 
 document.addEventListener("DOMContentLoaded", () => {

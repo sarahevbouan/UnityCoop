@@ -165,7 +165,7 @@ let returnSummaryChart = document.getElementById("return-summary-linechart");
       }
   );
 } catch(error){
-  console.log("Error loading charts");
+  console.log(error.message);
 } 
 
 

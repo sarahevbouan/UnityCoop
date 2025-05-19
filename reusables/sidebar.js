@@ -20,32 +20,32 @@ let sidebarGenerator = () => {
         <nav class="sidebar-nav">
           <span class="close-menu-btn">X</span>
           <ul>
-            <li class="navlink-group" id="overview">
+            <li class="navlink-group active-state" id="overview">
               <a href="index.html">
                 <img src="images/overview_icon.svg" alt="" />Overview</a
               >
             </li>
-            <li class="navlink-group" id="pending-requests">
+            <li class="navlink-group active-state" id="pending-requests">
               <a href="pending-request.html">
                 <img src="images/pend_req_icon.svg" alt="" />Pending Requests</a
               >
             </li>
-            <li class="navlink-group" id="loans">
+            <li class="navlink-group active-state" id="loans">
               <a href="loans.html">
                 <img src="images/loan_icon.svg" alt="" />Loans</a
               >
             </li>
-            <li class="navlink-group" id="transactions">
+            <li class="navlink-group active-state" id="transactions">
               <a href="transactions.html">
                 <img src="images/transaction_icon.svg" alt="" />Transactions</a
               >
             </li>
-            <li class="navlink-group" id="users">
+            <li class="navlink-group active-state" id="users">
               <a href="users.html">
                 <img src="images/user_icon.svg" alt="" />Users</a
               >
             </li>
-            <li class="navlink-group" id="settings">
+            <li class="navlink-group active-state" id="settings">
               <a href="settings.html">
                 <img src="images/settings_icon.svg" alt="" />Settings</a
               >

@@ -57,7 +57,7 @@ const barchartBuilder = (canvasId, chartLabel, barchartYValues) => {
             );
         } 
 }catch (error){
-    console.log("Error loading chart");
+    console.log(error.message);
 }
 };
 
@@ -106,7 +106,7 @@ const piechartBuilder = (chartType, canvasId, chartLabel, piechartYValues, piech
     legendStyles(legend2, 1);
     legendStyles(legend3, 2);
 }catch(error){
-        console.log("Error loading chart");
+        console.log(error.message);
     }
 };
 
